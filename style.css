@@ -40,9 +40,11 @@
     }
     
     .key-symbol {
+        height: 5rem;
         font: inherit;
         font-size: 3rem;
         border: 1px solid white;
+        text-align: center;
         padding: 0.7rem 1.2rem;
         border-radius: 5px;
     }
