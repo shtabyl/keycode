@@ -6,12 +6,44 @@
     }
 }
 
+@layer ui-kit {
+    :root {
+        font-family: Helvetica, sans-serif;
+        --main-color: #7AB2B2;
+        --main-color-light: #CDE8E5;
+        --bg-color: #4D869C;
+        color: white;
+    }
+}
+
 @layer layout {
-    .container {
+    .section-main__container {
         height: 100svh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@layer decoration {
+    .container {
+        background: linear-gradient(
+            to top, var(--bg-color), 
+            hsla(197, 34%, 49%)
+        );
+    }
+
+    .key-code {
+        font-size: 8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .key-symbol {
+        font: inherit;
+        font-size: 3rem;
+        border: 1px solid white;
+        padding: 0.7rem 1.2rem;
+        border-radius: 5px;
     }
 }
